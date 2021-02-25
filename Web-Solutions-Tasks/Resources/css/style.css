@@ -52,6 +52,12 @@ width: 40%;
     margin: 0;
     padding: 0;
 }
+.box1{
+    float: left;
+}
+.box2{
+    float: right;
+}
 .box:last-child{
 
 }
