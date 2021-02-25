@@ -49,6 +49,8 @@ h3{
 }
 .box{
 width: 40%;
+    margin: 0;
+    padding: 0;
 }
 .box:last-child{
 
