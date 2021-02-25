@@ -1,0 +1,753 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+html, body{
+    text-rendering: optimizeLegibility;
+    font-family: 'Sarabun', sans-serif;
+    color: #4b4b4b;
+    font-size: 24px;
+    
+}
+section{
+    padding: 80px 0;
+    margin: 0;
+}
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+h1{
+   text-transform:uppercase;
+   letter-spacing: 1px;
+    word-spacing: 3px;
+    font-weight: 800;
+    margin: 0;
+    color: #fff;
+    line-height: 100%;
+    font-size: 240%;
+    margin-bottom: 25px;
+
+}
+h2{
+  text-transform:uppercase;
+   letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: 300;
+    color: #3b5998;
+    line-height: 100%;
+    font-size: 160%;
+    text-align: center;
+    margin-bottom: 40px;
+      
+}
+h4{
+  color: #3b5998;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 110%;
+}
+.options{
+    display: none;
+    background-color: #fff;
+    width: 1140px;
+    height: auto;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 25px;
+   
+ 
+   
+}
+.options ul li{
+    list-style: none;
+     display: inline-block;
+   margin-left: 12%;
+   
+}
+.options ul li a{
+    color: #3b5998;
+    text-decoration: none;
+    font-size: 85%;
+    
+}
+
+header{
+    background-image:linear-gradient(rgba(59, 89, 154, 0.93), rgb(0, 0, 0)),url(/Resources/img/church.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.hero-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+        width: 1140px;
+    
+}
+header nav{
+    display: block;
+}
+/*main nav sticky*/
+.main-nav{
+    max-width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+     z-index: 9999;
+
+}
+
+.main-nav .nav-list,
+.main-nav .nav-list{
+        float: right;
+    display: inline-block;
+    margin-top: 20px;
+}
+.main-nav .nav-list li a:visited,
+.main-nav .nav-list li a:link{
+    color: #555;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 60%;
+    letter-spacing: 2px;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    font-weight: 300;
+    transition:  border-color 0.2s, color 0.2s, background-color 0.2s, border-radius 0.2s;
+  
+    
+}
+.main-nav .nav-list li a:active,
+.main-nav .nav-list li a:hover{
+    border-color: #eb3b5a;
+    background-color: #eb3b5a;
+    border-radius: 20px;
+    color: 	#3b5998;
+    font-weight: 500;
+   
+}
+
+.main-nav .options{
+    display: none;
+    background-color: #fff;
+    width: 1140px;
+    height: auto;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+/**** Desire pink color: #eb3b5a *****/
+.btn{
+   color: #fff;
+   text-decoration: none;
+    border: 1px solid #eb3b5a;
+    border-radius: 50px;
+    padding: 10px 30px;
+    margin-right: 10px;  
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+    font-weight: 100;
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: #eb3b5a;
+}
+.btn-full:active,
+.btn-full:hover{
+    background-color: #e81c40;
+    border-color: #e81c40;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+color: #eb3b5a;
+}
+.btn-ghost:active,
+.btn-ghost:hover{
+    background-color: #eb3b5a;
+    border-color: #eb3b5a;
+    color: #fff;
+    
+    
+}
+
+/*******  Main - Navigation   *****/
+.main-logo, .main-log{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    left: 48%;
+    margin-top: 10px;
+}
+.main-log{
+display: none;
+}
+.main-nav .main-log{
+display: block;
+}
+
+.nav-list{
+    float: right;
+    display: inline-block;
+    margin-top: 30px;
+}
+.nav-list li{
+    display: inline-block;
+    
+}
+
+.nav-list li a:visited,
+.nav-list li a:link{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 60%;
+    letter-spacing: 2px;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    font-weight: 300;
+    transition:  border-color 0.2s, color 0.2s, background-color 0.2s, border-radius 0.2s;
+    
+}
+.nav-list li a:active,
+.nav-list li a:hover{
+    border-color: #f7f7f7;
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    color: 	#3b5998;
+    font-weight: 500;
+   
+}
+
+
+.box-search{
+    
+    margin-top: 30px;
+    background-color: #dfe3ee;
+    width: 130px;
+    height: 40px;
+    border-top: 1 solid #dfe3ee;
+    border-radius: 20px;
+   
+}
+.main-nav .box-search{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: #dfe3ee;
+    width: 130px;
+    height: 40px;
+    border-top: 1 solid #dfe3ee;
+    border-radius: 20px;
+   
+}
+.in-search{
+    width: 70%;
+    margin-top: 5px;
+    border: 0 solid #dfe3ee;
+    outline: 0; 
+    font-size: 70%;
+    background-color: #dfe3ee;
+}
+.main-nav .in-search{
+    width: 70%;
+    margin-top: 5px;
+    border: 0 solid #dfe3ee;
+    outline: 0; 
+    font-size: 70%;
+    background-color: #dfe3ee;
+}
+
+.box-search i{
+    margin-left: 10px;
+    margin-right: 3px;
+    font-size: 80%;  
+}
+.main-nav .box-search i{
+    margin-left: 10px;
+    margin-right: 3px;
+    font-size: 80%;  
+}
+
+.status-box{
+    width: 20%;
+    height: 400px;
+    margin-right: 2%;
+    background-image: linear-gradient(rgb(255, 255, 255),rgba(235, 59, 90, 0.84));
+    border-radius: 40px;
+    text-align: center;
+    color: #fff;
+    font-weight: 100;
+    font-size: 80%;
+    transition: background-image 0.5s, box-shadow 0.2s;
+    padding-top: 40px; 
+    margin-top: 10%;
+    box-shadow: none;
+}
+
+.status-box:first-child{
+    margin-left: 2%;
+}
+.status-box:hover{
+  
+    background-image: linear-gradient(rgba(59, 89, 152, 0.91),rgba(235, 59, 90, 0.84));
+      box-shadow: 0px 20px 40px #dddddd;
+}
+
+.sec-status h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.status-box img{
+    width: auto;
+    height: 200px;
+    transition: height 0.2s;
+    
+}
+
+.status-box img:hover{
+    
+    height: 210px;
+    
+}
+
+
+
+/********* sec-friend  ***********/
+
+.box-friends{
+     padding-top: 100px;
+}
+.box-friends:first-child{
+     padding-top: 50px;
+}
+
+.box-friends:first-child{
+     margin-top: 100px;
+}
+.form-friends,
+.form-remember{
+  
+    border-radius: 30px;
+    padding: 40px;
+    font-size: 80%;
+    background-image:none;
+    transition: background-image 0.5s;
+}
+.form-friends:hover,
+.form-remember:hover,
+.form-friends:active,
+.form-remember:active{
+    background-image: radial-gradient(transparent,rgba(255, 255, 255, 0.06));
+}
+.form-friends{
+    border: 1px solid #3b5998;
+   
+}
+.friend-img{
+    padding-top: 40px;
+  width: 300px;
+}
+
+
+.sec-friend{
+    /**/
+    background-image: linear-gradient(rgba(255, 255, 255, 0.91),rgba(235, 59, 90, 0.84));
+   
+}
+.box-friends p{
+    color: #3b5998;
+    font-weight: 500;
+}
+.box-friends p span{
+    font-weight: 800;
+}
+.box-friends input[type=text]:first-child, input[type=email]{
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom: 1.5px solid 	#3b5998;
+    outline: none;
+    padding: 7px;
+    margin: 10px;
+    
+}
+
+.box-friends select{
+    color: #3b5998;
+    border-bottom: 1.5px solid 	#3b5998;
+}
+input[type=text]:first-child, input[type=email]{
+    width: 80%;
+}
+.box-friends input[type=text], input[type=email], select{
+color: #3b5998;
+}
+.box-friends ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #3b5998;
+    opacity: 0.5;
+
+}
+.box-friends input[type=submit],
+.box-remember input[type=submit]{
+    background-color: #3b5998;
+    border-color: transparent;
+    margin: 15px 7px 0px 20px;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 30px;
+    transition:  background-color 0.2s;
+    font-weight: 100;
+}
+input[type=submit]:last-child{
+    color: #3b5998;
+    background-color: transparent;
+     border-color: #3b5998;
+     transition:  background-color 0.2s, color 0.2s;
+}
+
+input[type=submit]:hover{
+    
+    background-color: #eb3b5a;
+    border-color: transparent;
+    
+    
+}
+input[type=submit]:last-child:hover{
+    
+    color: #fff;
+    
+}
+input:first-of-type{
+  
+}
+.label-div{
+    margin: 10px 19px;
+    color: #3b5998;
+}
+
+/*********** Section Remember  **********/
+.sec-Remmember{
+     background-image: linear-gradient(rgba(235, 59, 90, 0.84),#3b5998);
+     padding-bottom: 200px;
+    
+}
+.remember-img{
+    width: 200px;
+    margin: 30px 40px 0px 240px;
+}
+.box-remember input[type=text],input[type=email], select, input[type=date], textarea{
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom: 1.5px solid 	#ffffff;
+    outline: none;
+    padding: 7px;
+    margin: 10px; 
+    color: #fff;
+}
+.box-remember textarea{
+    
+    width: 90%;;
+    
+}
+
+.box-remember option{
+    color: #3b5998;
+}
+.form-remember{
+   border: 1px solid #ffffff;
+    margin-top: 100px;   
+}
+
+.box-remember ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 0.5; /* Firefox */
+}
+
+.box-remember h4{
+    color: #fff;
+}
+
+.box-remeber p{
+     margin: 150px 40px 0px 240px;
+    color: #fff;  
+}
+.box-remeber p span{
+    
+    font-weight: 800;
+}
+.label-divv{
+    margin: 10px 19px;
+    color: #fff;
+}
+.box-remember input[type=submit]{
+    background-color: #eb3b5a;
+    border-color: transparent;
+    margin: 15px 7px 0px 20px;
+    color: #fff;
+    padding: 8px 30px;
+    border-radius: 30px;
+    transition:  background-color 0.2s;
+    font-weight: 100;
+}
+
+.box-remember input[type=submit]:hover{
+    
+    background-color: #324b80;
+    border-color: transparent;
+    
+    
+}
+
+/******** Section friends all ********/ 
+.sec-all{
+    margin: 0;
+    padding: 0;
+    
+}
+.r-all{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+   
+}
+.box-f{
+    height: 400px;
+    margin: 0;
+    width: 25%;
+}
+.box-f:hover{
+    
+}
+.box-f{
+    background-color: #324b80;
+    background-size: cover;
+    background-position: center;
+  
+    
+    
+}
+
+
+.box-t{
+     background-color: rgba(235, 59, 90, 0.83);
+    
+}
+.box-f1{
+    background-image: url(/Resources/img/DSC00177.JPG);
+     transition: background-size 0.5s;
+}
+
+.box-f2{
+    background-image: url(/Resources/img/O94uGN-FGB8.jpg);
+}
+.box-f3{
+    background-image: url(/Resources/img/DSC00365.JPG);
+    background-position: top;
+}
+blockquote{
+    color: #fff;
+    font-size: 70%;
+    margin: 10%;
+    font-style: italic;
+    display: none;
+}
+blockquote:before{
+ content: "\201c";
+    display: block;
+    font-size: 200%;
+   
+    
+    
+}
+cite img{
+   
+    vertical-align: middle; 
+    width: 50px;  
+     margin-right: 5px;
+}
+cite{
+     display: block;
+    margin-top: 20px;
+   
+    font-size: 75%;
+    
+}
+.box-f4{
+    background-image: url(/Resources/img/DSC_0284.png);
+}
+.box-f2{
+    background-image: url(/Resources/img/O94uGN-FGB8.jpg);
+}
+.box-f5{
+    background-image: url(/Resources/img/Edited%20IMG_0089.png);
+}
+.box-f6{
+    background-image: url(/Resources/img/family.jpg);
+}
+.box-f7{
+    background-image: url(/Resources/img/WhatsApp%20Image%202020-07-05%20at%2014.43.21.jpeg);
+     background-position: top;
+}
+.box-f8{
+    background-image: url(/Resources/img/timelapse_000162.JPG);
+}
+.sec-how{
+    background-color: 	#f7f7f7;
+}
+.i-next{
+    font-size: 40px;
+}
+.text-box h4{
+    color: #fff;
+     font-size: 110%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.text-box{
+    display: none;
+color: #fff;
+    font-size: 90%;
+}
+.icon-box{
+    color: #eb3b5a;;
+     margin-right:15px;
+    font-size: 90%;
+
+}
+
+.box-w{
+     color: #3b5998;  
+}
+.sec-how h2{
+    color: #3b5998;
+}
+.sec-how h2:after{
+    content: "";
+    height: 3px;
+    width: 120px;
+    display: block;
+    background-color: #eb3b5a;
+    margin: 0 auto;
+    margin-top: 30px;
+    
+}
+/*
+.r-all figure{
+    width: 100%;
+    height: 100%;
+    background-color: #3b5998;
+    opacity: 0.3;
+    margin: 0;
+    transition: opacity 0.2s;
+   
+}
+.r-all figure:hover{
+    opacity: 0;
+    
+}
+*/
+.box-w:first-of-type{
+    border-right: 1px dotted #3b5998;  
+    text-align: right;
+     padding-right: 20px;
+}
+
+
+.app-photo{
+    width: 70%;
+    float: left;
+
+}
+
+
+.box-w a img{
+    width: 30%;
+   
+}
+.and-but{
+    margin-top: 200px;
+   
+}
+.steps{
+   
+    margin-top: 50px;
+        padding-left: 20px;
+    
+}
+.steps div{
+      
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
+.steps div{
+     float: left;
+    border: 1px solid #3b5998;  
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 7px;
+}
+
+/*#8b9dc3*/
+.sec-footer{
+    background-color: #3b5998;
+    color: #dfe3ee;
+    font-size: 85%;
+    font-weight: 100;
+    padding-bottom: 15px;
+    padding-top: 15px; 
+}
+.soc a{
+    text-decoration: none;
+    color: #dfe3ee;
+    font-size: 150%;
+    margin-right: 15px;
+    transition: color 0.2s;
+    
+}
+.about{
+    margin-left: 80%;
+    color: #dfe3ee;;
+    text-decoration: none;
+     transition: color 0.2s;
+}
+.soc a:hover,
+.about:hover{
+    color: #8b9dc3;
+}
+.copy{
+    margin-top: 20px;
+    text-align: center;
+}
+.r-sec-frien{
+   margin-left: 39%
+}
+.r-sec-r{
+    margin-right: 39%;
+}
+
+/*Animations*/
+
+.js--wp-1, .js--wp-2, .js--wp-3, .js--wp-4{
+    opacity: 0;
+    animation-duration: 1s;
+}
+.js--wp-1 .animated,
+.js--wp-2 .animated,
+.js--wp-3 .animated,
+.js--wp-4 .animated
+{
+    opacity: 1;
+}
+.js--wp-1-1{
+    animation-duration: 1s;
+}
